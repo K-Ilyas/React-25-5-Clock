@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: white;
+  background: linear-gradient(to bottom, #83a4d4 0%, #b6fbff 100%);
+}
+body #root {
+  height: 100%;
+  width: 100%;
+}
+body #root .container-fluid {
+  min-width: 300px !important;
+}
+
+.title {
+  font-family: "Special Elite", cursive;
+  font-size: 2.8rem;
+}
+.title::first-letter {
+  color: crimson;
+  text-decoration: underline;
+}
+
+.mt-5 {
+  margin-top: 90px !important;
+}
+
+.vstack #break-label,
+.vstack #session-label {
+  font-family: "Quantico", sans-serif;
+  font-size: 1.8rem;
+}
+.vstack .controller {
+  margin-top: -20px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.vstack .controller p #session-length,
+.vstack .controller p #break-length {
+  font-family: "Germania One", cursive;
+  padding: 0 10px;
+}
+.vstack .controller p i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.timer-container {
+  margin: auto;
+  width: 250px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+.timer-container p {
+  text-align: center;
+}
+.timer-container #timer-label {
+  margin-top: 10px;
+  font-family: "Quantico", sans-serif;
+  font-size: 1.7rem;
+  margin: 10px 0 -20px 0;
+}
+.timer-container #time-left {
+  font-size: 4rem;
+  font-family: "Germania One", cursive;
+  margin: -10px 0 5px 0;
+}
+
+.danger {
+  animation-name: danger;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes danger {
+  0% {
+    border-color: white;
+    color: white;
+  }
+  100% {
+    border-color: crimson;
+    color: crimson;
+  }
+}
+.control #start_stop,
+.control #reset {
+  font-size: 1.8rem;
+}
+.control i {
+  padding: 8px;
+}
+.control i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */
